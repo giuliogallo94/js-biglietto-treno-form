@@ -50,4 +50,21 @@ sendBtn.addEventListener("click", function () {
   document.getElementById("priceOption").innerHTML = `${priceOption}`;
   document.getElementById("coach").innerHTML = `${coach}`;
   document.getElementById("cpCode").innerHTML = `${cpCode}`;
+
+ 
+});
+
+
+const resetBtn = document.getElementById("reset"); 
+
+resetBtn.addEventListener("click", function () {
+  document.getElementById("nameUser").innerHTML = ``;
+  document.getElementById("userPrice").innerHTML = ``;
+  document.getElementById("priceOption").innerHTML = ``;
+  document.getElementById("coach").innerHTML = ``;
+  document.getElementById("cpCode").innerHTML = ``;
+
+  document.getElementById("name-user").value = ``;
+  document.getElementById("km-user").value = ``;
+  document.getElementById("age-user").value = ``;
 });

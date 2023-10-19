@@ -32,14 +32,14 @@
                     <!-- NOME -->
                     <div class="input-item mb-3 d-flex flex-column">
                         <label for="name-user"><h5>Nome e Cognome</h5></label>
-                        <input type="text" class="form-control" id="name-user" value="Giulio" />
+                        <input type="text" class="form-control" id="name-user" />
                       </div>
                       <!-- /NOME -->
 
                       <!-- KM -->
                       <div class="input-item my-3 d-flex flex-column">
                         <label for="km-user"><h5>Km da percorrere</h5></label>
-                        <input type="text" class="form-control" id="km-user" value="100" />
+                        <input type="text" class="form-control" id="km-user"/>
                       </div>
                       <!-- /KM -->
 
@@ -47,7 +47,8 @@
                       <div class="input-item my-3 d-flex flex-column">
                         <label for="age-user"><h5>Età</h5></label>
                         <select class="form-select" id="age-user">
-                            <option value="underAge" id="underAge" selected>fino a 18</18></option>
+                          <option value=""></option>
+                            <option value="underAge" id="underAge">fino a 18</18></option>
                             <option value="standardAge" id="standardAge">da 18 a 64</option>
                             <option value="overAge" id="overAge">65 o più</option>
                         </select>
@@ -58,7 +59,7 @@
                     <div class="ms_buttons mt-5">
                         <div class="buttons">
                             <button type="button" class="btn btn-success" id="send">Calcola</button>
-                            <button type="button" class="btn btn-danger" id="delete">Annulla</button>
+                            <button type="button" class="btn btn-danger" id="reset" onclick="fun()">Reset</button>
                           </div>
                     </div>
                       <!-- /BUTTONS -->
@@ -100,72 +101,8 @@
 
 
 
-        </div>
-<!-- 
-
-            <div class="row"><h6>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h6></div>
-        
-        </div>
-        
-          <div class="input-item">
-            <label for="name-user">Nome e Cognome</label>
-            <input type="text" id="name-user" value="Giulio" />
           </div>
 
-          <div class="input-item">
-            <label for="km-user">Km da percorrere</label>
-            <input type="text" id="km-user" value="100" />
-          </div>
-
-          <div class="input-item">
-            <label for="age-user">Età</label>
-            <select id="age-user">
-                <option value="" id="age-selection"></option>
-                <option value="underAge" id="underAge" selected>fino a 18</18></option>
-                <option value="standardAge" id="standardAge">da 18 a 64</option>
-                <option value="overAge" id="overAge">65 o più</option>
-            </select>
-        </div>
-        </div>
-        <div class="col-6">
-          <div class="buttons">
-            <button id="send">Calcola</button>
-            <button id="delete">Annulla</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row text-center d-flex flex-column">
-        <h6>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h6>
-        <div class="col-5 d-flex">
-          <div class="input-item">
-            <label for="name-user">Nome e Cognome</label>
-            <input type="text" id="name-user" value="Giulio" />
-          </div>
-
-          <div class="input-item">
-            <label for="km-user">Km da percorrere</label>
-            <input type="text" id="km-user" value="100" />
-          </div>
-
-          <div class="input-item">
-            <label for="age-user">Età</label>
-            <select id="age-user">
-                <option value="" id="age-selection"></option>
-                <option value="underAge" id="underAge" selected>fino a 18</18></option>
-                <option value="standardAge" id="standardAge">da 18 a 64</option>
-                <option value="overAge" id="overAge">65 o più</option>
-            </select>
-        </div>
-        </div>
-        <div class="col-6">
-          <div class="buttons">
-            <button id="send">Calcola</button>
-            <button id="delete">Annulla</button>
-          </div>
-        </div>
-      </div> -->
-      <!-- /ROW -->
     </div>
     <!-- /CONTAINER -->
     <script src="js/script.js"></script>
