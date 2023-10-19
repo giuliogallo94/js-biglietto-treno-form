@@ -41,9 +41,13 @@ sendBtn.addEventListener("click", function () {
   }
   console.log(userPrice);
 
+  const coach = Math.floor(Math.random() * 50) + 1;
+  const cpCode = Math.floor(Math.random() * 100000) + 1;
   // OUTPUT
 
   document.getElementById("nameUser").innerHTML = `${nameUser}`;
   document.getElementById("userPrice").innerHTML = `${userPrice}€`;
   document.getElementById("priceOption").innerHTML = `${priceOption}`;
+  document.getElementById("coach").innerHTML = `${coach}`;
+  document.getElementById("cpCode").innerHTML = `${cpCode}`;
 });
