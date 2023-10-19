@@ -1,11 +1,32 @@
 body {
-  background-color: rgba(0, 0, 255, 0.536);
+background-image: url(../img/train-bg.jpg);
+background-size: cover;
+height: 100vh;
+width: 100vw;
 }
 
-.ms_row {
-  background-color: white;
+.ms_main-container {
+height: 90%;
+width: 80%;
+margin: 5vh auto;
 }
 
+.ms_main-container > .row {
+  height: 100%;
+} 
+
+.ms_form input {
+  color: #506c75;
+}
+
+#age-user option {
+  color: #506c75;
+}
+
+.ms_main-col {
+  background-color: rgba(255, 255, 255, 0.712);
+  border-radius: 1rem;
+}
 .ms_ticket-info span {
-  color: white;
+  color: #506c75;
 }
