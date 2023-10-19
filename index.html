@@ -18,40 +18,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
   </head>
-  <body class="text-center">
-    <h3>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
+  <body class="py-5">
+   
     <!-- Domande -->
     <!-- CONTAINER -->
-        <div class="container ">
-            <div class="row">
-
+        <div class="container p-0 w-100">
+            <div class="row d-flex justify-content-center g-5">
+                
                 <!-- INSERIMENTO DATI -->
-                <div class="col-6">
-
+                <div class="col-6 text-center border p-3">
+                    <h3>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
+                    <div class="ms_form">
                     <!-- NOME -->
-                    <div class="input-item">
+                    <div class="input-item mb-3 d-flex flex-column">
                         <label for="name-user">Nome e Cognome</label>
                         <input type="text" id="name-user" value="Giulio" />
                       </div>
                       <!-- /NOME -->
 
                       <!-- KM -->
-                      <div class="input-item">
+                      <div class="input-item my-3 d-flex flex-column">
                         <label for="km-user">Km da percorrere</label>
                         <input type="text" id="km-user" value="100" />
                       </div>
                       <!-- /KM -->
 
                       <!-- ETA' -->
-                      <div class="input-item">
+                      <div class="input-item my-3 d-flex flex-column">
                         <label for="age-user">Età</label>
                         <select id="age-user">
-                            <option value="" id="age-selection"></option>
                             <option value="underAge" id="underAge" selected>fino a 18</18></option>
                             <option value="standardAge" id="standardAge">da 18 a 64</option>
                             <option value="overAge" id="overAge">65 o più</option>
                         </select>
                      </div>
+                    </div>
+                    <div class="ms_buttons mt-5">
+                        <div class="buttons">
+                            <button id="send">Calcola</button>
+                            <button id="delete">Annulla</button>
+                          </div>
+                    </div>
                       <!-- /ETA' -->
 
                 </div>
@@ -60,14 +67,31 @@
                 <!-- /INSERIMENTO DATI -->
 
 
-
-                <div class="col-6">
-
-
-
+                <!-- IL TUO BIGLIETTO -->
+                <div class="col-6 text-center border p-3">
+                    <h3>IL TUO BIGLIETTO</h3>
+                    <div class="ms_name mt-5">
+                        <h5>Nome Passeggero</h5>
+                        <span id="nameUser"></span> <!-- inserire variabile nameUser -->
+                    </div>
+                    <div class="ms_ticket-info">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-12 my-3"><h5>Offerta</h5>
+                            <span id="priceOption"></span></div>
+                            <div class="col-12 my-3" id="coach"><h5>Carrozza</h5>
+                            <p>variabile</p></div>
+                            <div class="col-12 my-3" id="cpCode"><h5>Codice CP</h5>
+                            <p>variabile</p></div>
+                            <div class="col-12 my-3"><h5>Costo biglietto</h5>
+                            <span id="userPrice"></span></div>
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
+                <!-- /IL TUO BIGLIETTO -->
             </div>
 
 

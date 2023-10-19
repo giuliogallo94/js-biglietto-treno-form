@@ -5,3 +5,11 @@ body {
 .ms_row {
   background-color: white;
 }
+
+.ms_ticket-info span {
+  color: white;
+}
+
+.ms_name span {
+  color: green;
+}

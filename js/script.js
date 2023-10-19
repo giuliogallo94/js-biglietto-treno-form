@@ -28,20 +28,22 @@ sendBtn.addEventListener("click", function () {
   const overPrice = standardPrice - standardPrice * 0.4;
 
   let userPrice = "";
-
+  let priceOption = "";
   if (ageUser === "underAge") {
     userPrice = underPrice;
+    priceOption = "Tariffa minori";
   } else if (ageUser === "overAge") {
     userPrice = overPrice;
+    priceOption = "Tariffa over 65";
   } else {
     userPrice = standardPrice;
+    priceOption = "Tariffa Standard";
   }
   console.log(userPrice);
-});
 
-// OUTPUT
-function getOption() {
-  selectElement = document.querySelector("#select1");
-  output = selectElement.options[selectElement.selectedIndex].value;
-  document.querySelector(".output").textContent = output;
-}
+  // OUTPUT
+
+  document.getElementById("nameUser").innerHTML = `${nameUser}`;
+  document.getElementById("userPrice").innerHTML = `${userPrice}€`;
+  document.getElementById("priceOption").innerHTML = `${priceOption}`;
+});
